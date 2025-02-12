@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forever Yours, Rushrenna</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 50px;
+        }
+        h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        p {
+            font-size: 1.5em;
+            max-width: 600px;
+            margin: auto;
+            line-height: 1.6;
+        }
+        .heart {
+            font-size: 3em;
+            animation: heartbeat 1.5s infinite alternate;
+        }
+        @keyframes heartbeat {
+            from { transform: scale(1); }
+            to { transform: scale(1.2); }
+        }
+        .game-container {
+            margin-top: 20px;
+        }
+        .btn {
+            background: #ff6961;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        .message {
+            display: none;
+            font-size: 1.2em;
+            margin-top: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+    <script>
+       let correctAnswers = 0;
+const totalQuestions = 5; // Number of questions to answer correctly
+
+function checkAnswer(answer) {
+    if (answer === 'right') {
+        correctAnswers++;
+        if (correctAnswers === totalQuestions) {
+            document.getElementById("message").style.display = "block";
+        } else {
+            alert("Correct! Keep going!");
+        }
+    } else {
+        alert("Oops! Try again, my love! ❤️");
+    }
+}
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Forever Yours, Rushrenna ❤️</h1>
+        <p>From the moment I met you, my heart knew it had found its home. No matter what life brings, my love for you will never fade. I promise to stand by your side, love you endlessly, and cherish you forever.</p>
+        <p>I don't care what day it is—Rose Day, Valentine's Day, or any other occasion—because I will love you every single day like it's the last day on Earth.</p>
+        <c><h1>ANSWER THE FOLLOWING CORRECTLY</h1></c>
+        
+        <div class="game-container">
+            <p>Which of these is true? 💖</p>
+            <button class="btn" onclick="checkAnswer('wrong')">I love you only on Valentine's Day</button>
+            <button class="btn" onclick="checkAnswer('right')">I love you every day like it's the last</button>
+            <button class="btn" onclick="checkAnswer('wrong')">I love you only on special occasions</button>
+            
+            <p>What makes you the most special to me? 💖</p>
+            <button class="btn" onclick="checkAnswer('wrong')">Your cooking</button>
+            <button class="btn" onclick="checkAnswer('right')">Your love and kindness</button>
+            <button class="btn" onclick="checkAnswer('wrong')">Your jokes</button>
+            
+            <p>How long will I love you? 💖</p>
+            <button class="btn" onclick="checkAnswer('wrong')">Until next year</button>
+            <button class="btn" onclick="checkAnswer('right')">Forever and always</button>
+            <button class="btn" onclick="checkAnswer('wrong')">Until the next big fight</button>
+            
+            <p>What’s the net worth of your company 💖</p>
+            <button class="btn" onclick="checkAnswer('wrong')">320M$</button>
+            <button class="btn" onclick="checkAnswer('wrong')">42B$</button>
+            <button class="btn" onclick="checkAnswer('right')">∞</button>
+            
+            <p>If I had to choose between breathing and loving you, what would I do? 💖</p>
+            <button class="btn" onclick="checkAnswer('wrong')">Take a deep breath</button>
+            <button class="btn" onclick="checkAnswer('right')">Use my last breath to say 'I love you'</button>
+            <button class="btn" onclick="checkAnswer('wrong')">Hold my breath</button>
+
+            <p>What would I do if you got lost in a crowd? 💖</p>
+            <button class="btn" onclick="checkAnswer('wrong')">Shout your name until I find you</button>
+            <button class="btn" onclick="checkAnswer('wrong')">Call you on the phone </button>
+            <button class="btn" onclick="checkAnswer('right')">Follow my heart, because it always leads to you</button>
+
+            <p>If something is bothering you, what would you do? 💖</p>
+            <button class="btn" onclick="checkAnswer('right')">Tell everthing to employee,sharing can relif stress</button>
+            <button class="btn" onclick="checkAnswer('wrong')">Keep things inside yourself,this is wrong </button>
+            <button class="btn" onclick="checkAnswer('wrong')">Stay up on your own</button>
+        </div>
+        
+        <p id="message" class="message">You are my forever and always, Rushrenna. No words can truly express how deeply I love you. Every heartbeat of mine whispers your name, and my soul belongs to you, now and forever. If love had a form, it would be you—pure, beautiful, and endless. ❤️<br>Like the stars that dance in the midnight sky,<br>
+            My love for you will never fade, never die.<br>
+            Through storms and sunshine, near or far,<br>
+            You’ll always be my guiding star.<br><br>
+            
+            Not just today, nor just tomorrow,<br>
+            But forever, in joy and sorrow.<br>
+            No clock can time, no tide can sway,<br>
+            The love I promise every single day.<br>
+            
+            You are my dream, my heart’s embrace,<br>
+            My forever home, my safest place.<br>
+            Rushrenna, in every breath I take,<br>
+            Know that I love you—never fake, never break.<br><br>
+            
+            Forever yours,
+            Employee ❤️</p>
+        <p class="heart">❤️</p>
+    </div>
+</body>
+</html>
